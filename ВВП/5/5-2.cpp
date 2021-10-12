@@ -22,14 +22,14 @@ main()
     }
     if (C > B)
     {
-        BC = B - C;
+        BC = C - B;
     }
     else
     {
-        BC = C - B;
+        BC = B - C;
 
     }
-    cout << "Длина AB равна " << AC << endl;
+    cout << "Длина AC равна " << AC << endl;
     cout << "Длина ВС равна " << BC << endl;
     cout << "Сумма длин AC и BC равна " << AC + BC << endl;
     return 0;

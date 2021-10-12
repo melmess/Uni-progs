@@ -12,23 +12,8 @@ main()
     cin >> B;
     cout << "Введите координаты точки C: " << endl;
     cin >> C;
-    if (C > A)
-    {
-        AC = C - A;
-    }
-    else
-    {
-        AC = A - C;
-    }
-    if (C > B)
-    {
-        BC = B - C;
-    }
-    else
-    {
-        BC = C - B;
-
-    }
+    AC = C - A;
+    BC = B - C;
     cout << "Произведение длин АС и ВС равно " << AC * BC << endl;
     return 0;
 }
