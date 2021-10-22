@@ -14,46 +14,16 @@ main()
     cout << "Введите координаты третьей вершины треугольника: " << endl;
     cin >> x3 >> y3;
     //подсчет длины первой стороны треугольлника
-    if (x1 > x2) {
-        a1 = x1 - x2;
-    }
-    else {
-        a1 = x2 - x1;
-    }
-    if (y1 > y2) {
-        b1 = y1 - y2;
-    }
-    else {
-        b1 = y2 - y1;
-    }
+    a1 = abs(x1 - x2);
+    b1 = abs(y1 - y2);
     float len1 = sqrt(a1 * a1 + b1 * b1);
     //подсчет длины второй стороны треугольника
-    if (x2 > x3) {
-        a2 = x2 - x3;
-    }
-    else {
-        a2 = x3 - x2;
-    }
-    if (y2 > y3) {
-        b2 = y2 - y3;
-    }
-    else {
-        b2 = y3 - y2;
-    }
-    float len2 = sqrt(a2 * a2 + b2 * b2);
+    a2 = abs(x2 - x3);
+    b2 = abs(y3 - y3);
+    float len2 = sqrt(a2 * a2+ b2 * b2);
     //подсчет длины третьей стороны треугольника
-    if (x1 > x3) {
-        a3 = x1 - x3;
-    }
-    else {
-        a3 = x3 - x1;
-    }
-    if (y1 > y3) {
-        b3 = y1 - y3;
-    }
-    else {
-        b3 = y3 - y1;
-    }
+    a3 = abs(x1 - x3);
+    b3 = abs(y1 - y3);
     float len3 = sqrt(a3 * a3 + b3 * b3);
     //подсчет периметра
     float P = len1 + len2 + len3;

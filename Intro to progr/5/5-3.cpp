@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -12,25 +13,8 @@ main()
     cin >> B;
     cout << "Введите координаты точки C: " << endl;
     cin >> C;
-    if (C > A)
-    {
-        AC = C - A;
-    }
-    else
-    {
-        AC = A - C;
-    }
-    if (C > B)
-    {
-        BC = C - B;
-    }
-    else
-    {
-        BC = B - C;
-
-    }
-    cout << "Длина AC равна " << AC << endl;
-    cout << "Длина ВС равна " << BC << endl;
-    cout << "Сумма длин AC и BC равна " << AC + BC << endl;
+    AC = abs(C - A);
+    BC = abs(B - C);
+    cout << "Произведение длин АС и ВС равно " << AC * BC << endl;
     return 0;
 }
