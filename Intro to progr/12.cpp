@@ -121,40 +121,40 @@ main ()
     switch (month)
     {
         case 1:
-        cout << "января";
+        cout << "января" << endl;
         break;
         case 2:
-        cout << "февраля";
+        cout << "февраля"  << endl;
         break;
         case 3:
-        cout << "марта";
+        cout << "марта"  << endl;
         break;
         case 4:
-        cout << "апреля";
+        cout << "апреля" << endl;
         break;
         case 5:
-        cout << "мая";
+        cout << "мая" << endl;
         break;
         case 6:
-        cout << "июня";
+        cout << "июня" << endl;
         break;
         case 7:
-        cout << "июля";
+        cout << "июля" << endl;
         break;
         case 8:
-        cout << "августа";
+        cout << "августа" << endl;
         break;
         case 9:
-        cout << "сентября";
+        cout << "сентября" << endl;
         break;
         case 10:
-        cout << "октября";
+        cout << "октября" << endl;
         break;
         case 11:
-        cout << "ноября";
+        cout << "ноября" << endl;
         break;
         case 12:
-        cout << "декабря";
+        cout << "декабря" << endl;
         break;
     }
 
@@ -171,13 +171,13 @@ main ()
         switch (N)
         {
             case -1:
-            cout << "Робот движется на запад" << endl;
+            cout << "Робот движется на восток" << endl;
             break;
             case 0:
             cout << "Робот движется на север" << endl;
             break;
             case 1:
-            cout << "Робот движется на восток" << endl;
+            cout << "Робот движется на запад" << endl;
             break;
         }
         break;
@@ -185,13 +185,13 @@ main ()
         switch (N)
         {
             case -1:
-            cout << "Робот движется на восток" << endl;
+            cout << "Робот движется на запад" << endl;
             break;
             case 0:
             cout << "Робот движется на юг" << endl;
             break;
             case 1:
-            cout << "Робот движется на запад" << endl;
+            cout << "Робот движется на восток" << endl;
             break;
         }
         break;
@@ -199,13 +199,13 @@ main ()
         switch (N)
         {
             case -1:
-            cout << "Робот движется на юг" << endl;
+            cout << "Робот движется на север" << endl;
             break;
             case 0:
             cout << "Робот движется на запад" << endl;
             break;
             case 1:
-            cout << "Робот движется на север" << endl;
+            cout << "Робот движется на юг" << endl;
             break;
         }
         break;
@@ -213,13 +213,13 @@ main ()
         switch (N)
         {
             case -1:
-            cout << "Робот движется на север" << endl;
+            cout << "Робот движется на юг" << endl;
             break;
             case 0:
             cout << "Робот движется на восток" << endl;
             break;
             case 1:
-            cout << "Робот движется на юг" << endl;
+            cout << "Робот движется на север" << endl;
             break;
         }
         break;
